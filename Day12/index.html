@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //set->can't accept duplicates,to uniquely identify the value's.
+        //create a set
+        let email=new Set([]);
+        email.add("js@gmail.com");
+        email.add("java@gmail.com");
+        email.add("python@gmail.com");
+        console.log(email);
+        email.delete("js@gmail.com");
+
+        for(let mail or email){
+            console.log(mail);
+        }
+        email.forEach(x =>{
+            console.log(x);
+        })
+        //example
+        let adminpermission = new set(["write","read","delete"]);
+        let userpermission = new set(["read"]);
+
+        Function hasPermission(role,permission){
+            return role.has(permission);
+        }
+        console.log(hasPermission(adminpermission,"delete"));
+        console.log(hasPermission(userpermission,"delete"));
+
+        //Map
+        let user1={name:"Yashwanth Raj"};
+        let user2={name:"Kishor"};
+        let map=new Map();
+        map.add("Welcome");
+        map.set(user1,"Welcome");
+        map.set(user2,"Hi Kishor");
+        console.log(map);
+        map.delete(user2);
+        console.log(map);
+        for(let detail of map.values){
+            console.log(detail);
+        }
+
+
+    </script>
+</body>
+</html>
