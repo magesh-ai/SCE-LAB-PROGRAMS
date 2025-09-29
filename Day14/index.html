@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        What is a promise?
+                A promise in js is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+                It has 3 possible states:
+                    Pending->Initial state,operation not complete yet.
+                    Fulfillef(Resolved)->Operation completed successfully.
+                    Rejected->Operation Failed.
+                    .then()
+        */ 
+       let TicketBooking=new Promise((resolve,reject)=>{
+            let booking=true;
+        if(booking)
+            resolve()
+        else
+            reject()
+       })
+
+       .then(Sucess)
+       .catch(Failure)
+
+       function Sucess(){
+        console.log("your ticket is confirmed.");
+       }
+       function Failure(){
+        console.log("No Seat is available.");
+       }
+    </script>
+</body>
+</html>
